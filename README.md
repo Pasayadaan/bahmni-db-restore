@@ -3,15 +3,15 @@
 
 #### Run using a suitable option
 - Restore latest backupl
- - Docker_run_bahmniDBRestore –d<[mysq|l<[mysq|lpg]>]> -l
+  - Docker_run_bahmniDBRestore –d<[mysq|l<[mysq|lpg]>]> -l
 - Restore backup of specific week of the month 
- - Docker run_bahmniDBRestore -d<[mysq|lpg]> -n<week # of the month>
+  - Docker run_bahmniDBRestore -d<[mysq|lpg]> -n<week # of the month>
 - Restore latest / specific week’s backup of a specific client
- - Docker_run_bahmniDBRestore -d<[mysq|lpg]> -c<client folder name> [-l | -n<specific week #>
+  - Docker_run_bahmniDBRestore -d<[mysq|lpg]> -c<client folder name> [-l | -n<specific week #>
 - Restore all backups for current week
- - Docker_run_bahmniDBRestore -d<[mysq|lpg]>
+  - Docker_run_bahmniDBRestore -d<[mysq|lpg]>
 - Restore all backups but exclude specific client
- - Docker_run_bahmniDBRestore -d<[mysq|lpg]> -e<client folder name to be excluded>
+  - Docker_run_bahmniDBRestore -d<[mysq|lpg]> -e<client folder name to be excluded>
  
 #### Check status in /root/<mysql|pg>-db-restore.txt and detailed log in /root/<client foldername-mysql|pg>-db-restore.log
 #### WIP - SMS is sent listing failed backup 
